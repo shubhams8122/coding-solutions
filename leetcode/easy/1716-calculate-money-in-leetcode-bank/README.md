@@ -49,8 +49,8 @@ Explanation: After the 20th day, the total is (1 + 2 + 3 + 4 + 5 + 6 + 7) + (2 
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 7.8 MB (beats 50.19%)  
-**Submitted:** 2026-08-15T13:43:20.557Z  
+**Memory:** 7.8 MB (beats 88.56%)  
+**Submitted:** 2026-08-15T13:43:51.052Z  
 
 ```cpp
 class Solution {
