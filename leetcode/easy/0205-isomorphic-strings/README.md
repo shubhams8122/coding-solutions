@@ -52,9 +52,9 @@ The strings `s` and `t` can not be made identical as `'1'` needs to be mapped to
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 54.37%)  
-**Memory:** 9.6 MB (beats 7.69%)  
-**Submitted:** 2026-08-26T18:00:25.976Z  
+**Runtime:** 7 ms (beats 6.37%)  
+**Memory:** 9.7 MB (beats 7.70%)  
+**Submitted:** 2026-08-27T18:10:13.676Z  
 
 ```cpp
 class Solution {
