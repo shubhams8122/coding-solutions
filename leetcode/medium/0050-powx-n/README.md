@@ -46,33 +46,27 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 8.7 MB (beats 44.63%)  
-**Submitted:** 2026-08-13T12:50:09.059Z  
+**Runtime:** 0 ms  
+**Memory:** 7.9 MB  
+**Submitted:** 2026-09-26T13:03:02.991Z  
 
 ```cpp
 class Solution {
+private:
+    double helper(double x, long n) {
+        if (n == 0) return 1.0;
+        if (n < 0) return 1.0 / helper(x, -n);
+        
+        if (n % 2 == 0) {
+            double half_pow = helper(x, n / 2);
+            return half_pow * half_pow;
+        }
+        return x * helper(x, n - 1);
+    }
+
 public:
     double myPow(double x, int n) {
-        long long N = n;
-        // Handle negative exponents
-        if (N < 0) {
-            x = 1 / x;
-            N = -N;
-        }
-        
-        double ans = 1.0;
-        double current_product = x;
-        
-        while (N > 0) {
-            if (N % 2 == 1) {
-                ans *= current_product;
-            }
-            current_product *= current_product;
-            N /= 2;
-        }
-        
-        return ans;
+        return helper(x, n);
     }
 };
 ```
