@@ -75,19 +75,16 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 387 ms (beats 11.29%)  
-**Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-10-26T01:57:39.474Z  
+**Runtime:** 121 ms  
+**Memory:** 0B  
+**Submitted:** 2026-10-26T01:58:32.743Z  
 
 ```sql
-SELECT 
-    IFNULL(
-        (SELECT DISTINCT salary 
-         FROM Employee 
-         ORDER BY salary DESC 
-         LIMIT 1 OFFSET 1), 
-        NULL
-    ) AS SecondHighestSalary;
+SELECT (SELECT DISTINCT salary as SecondHighestSalary
+FROM Employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1)
+as SecondHighestSalary
 ```
 
 ---
