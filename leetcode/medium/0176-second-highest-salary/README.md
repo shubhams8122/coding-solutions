@@ -75,9 +75,9 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 121 ms  
-**Memory:** 0B  
-**Submitted:** 2026-10-26T01:58:32.743Z  
+**Runtime:** 309 ms (beats 40.09%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-10-26T01:58:36.842Z  
 
 ```sql
 SELECT (SELECT DISTINCT salary as SecondHighestSalary
